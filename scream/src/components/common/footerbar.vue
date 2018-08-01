@@ -65,7 +65,7 @@
 	    position: fixed;
 	    margin: 0 auto;
 	    bottom: 0;
-	    background: #f60;
+	    background: #fff;
 	    border-top: 1px solid #f5f5f5;
 	    z-index: 1;
 	}
@@ -81,12 +81,12 @@
 	    width: 20%;
 	    height: 100%;
 	    /*font-size: 18px;*/
-	    color: #000;
+	    color: #555;
 	    text-align: center;
 	    list-style: none;
 	}
 	li a {
-    color: #000;
+    color: #555;
     display: block;
     width: 100%;
     height: 100%;
@@ -102,5 +102,9 @@
     li span {
     font-size: 16px;
     display: block;
+    }
+    .active{
+    	color: #000;
+    	font-weight: 700;
     }
 </style>
