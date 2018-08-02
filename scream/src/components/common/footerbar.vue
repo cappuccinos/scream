@@ -60,8 +60,8 @@
 	}
 	.footer{
   /*     line-height: 50px;*/     
-  		width: 100%;
-	    height: 50px;
+  		width: 375px;
+	    height: 44px;
 	    position: fixed;
 	    margin: 0 auto;
 	    bottom: 0;
@@ -73,20 +73,18 @@
 		width: 100%;
 		height: 100%;
 		list-style: none;
-		float: left;
 		
 	}
 	li {
 	    float: left;
 	    width: 20%;
 	    height: 100%;
-	    /*font-size: 18px;*/
-	    color: #555;
+	    color: #000;
 	    text-align: center;
 	    list-style: none;
 	}
 	li a {
-    color: #555;
+    color: #000;
     display: block;
     width: 100%;
     height: 100%;
@@ -96,11 +94,11 @@
 
 	li img {
     display: block;
-    width: 30px;
-	margin-left: 30%;
+    width: 23px;
+	margin-left: 34%;
     }
     li span {
-    font-size: 16px;
+    font-size: 12px;
     display: block;
     }
     .active{

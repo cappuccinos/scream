@@ -3,12 +3,11 @@
 		<img id="photo1" src="../../assets/titleView.png" alt="">
 		<img src="../../assets/jing.png" alt="" class="photo2">
 		<input type="text" placeholder="搜索我的尖叫好物" v-on:click="play()">
-        
-
 	</div>
 </template>
 
 <script type="text/javascript">
+
 	export default{
 		name:"APP",
 		data(){
@@ -24,11 +23,15 @@
 </script>
 
 <style scoped>
+*{
+	padding: 0;
+	margin: 0;
+}
 	div{
-		position: fixed;
-		left: 0;
-		top: 0;
-
+		
+		width: 100%;
+		height: 44px;
+		background: #fff;
 	}
 	#photo1{
 		width: 64px; 
@@ -45,7 +48,7 @@
 	}
 	input{
 		width: 240px;
-		height: 26px;
+		height: 29px;
 		margin-left: 80px;
 		background: #f5f5f5;
 		border: none;

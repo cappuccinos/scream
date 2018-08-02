@@ -18,6 +18,7 @@ export default {
     list-style: none;
   }
   body{
-    height: 3000px;
+    height: 30000px;
+    background:#eee;
   }
 </style>

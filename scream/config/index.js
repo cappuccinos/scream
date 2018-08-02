@@ -10,8 +10,24 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+   proxyTable: {
+      //只要/v4/* 全部转发到m.maizuo.com
+          '/v4': {
+              target: 'https://m.wowdsgn.com',
+              host: 'm.wowdsgn.com',
+              changeOrigin:true,
+              // pathRewrite: {
+              //     '^/v4/api': '/v4/api'
+              //   }
+          },
+          "/v2":{
+            target: 'https://m.wowdsgn.com',
+            host: 'm.wowdsgn.com',
+            changeOrigin:true,
+          }
 
+          //  https://m.maizuo.com/v4/api/film/now-playing?__t=1532675055022&page=1&count=5
+    },
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined

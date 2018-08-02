@@ -9,6 +9,7 @@ import login from "../components/login"
 import cart from "../components/cart"
 import message from "../components/message"
 import mine from "../components/mine"
+import recommend from "../components/index_components/recommend"
 
 
 Vue.use(Router)
@@ -50,7 +51,13 @@ export default new Router({
   		
   		path:"/pages/message",
   		component:message
-
+      
+      },
+      {
+      
+      path:"/pages/recommend",
+      component:recommend
+      
       },
       {
   		
@@ -62,5 +69,6 @@ export default new Router({
       	path:"*",
       	redirect:"/pages/index"
       }
+      
   ]
 })
