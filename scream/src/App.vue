@@ -1,7 +1,10 @@
 <template>
-  <div>
-    <router-view></router-view>
-  </div>
+
+      <div id="app">
+    
+    
+      <router-view></router-view>
+    </div>
 </template>
 
 <script>
@@ -18,7 +21,6 @@ export default {
     list-style: none;
   }
   body{
-    height: 30000px;
     background:#eee;
   }
 </style>

@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div id = "box">
 		<swipe class="my-swipe" :auto="2000">
 			<swipe-item class="slide1" v-for="data in looplist" :key = "data.id">
 				<img :src="data.bannerImgSrc" alt="">
@@ -204,6 +204,9 @@
 			padding: 0;
 			margin: 0;
 		}
+		#box{
+			background: #fff;
+		}
 		img{
 			width:100%;
 			display: block;
@@ -215,7 +218,7 @@
 		.my-swipe {
 			width: 100%;
 			height: 250px;
-			margin-top: 40px;
+			
 		}
 		.page-module-title {
 			border-top: 14px solid #f5f5f5;

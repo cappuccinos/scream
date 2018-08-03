@@ -1,13 +1,14 @@
 <template>
 	<div id="box">
 	<navbar></navbar>
+	<div class="hd">
 		<ul>
-			<li><a @click="who='recommend'">推荐</a></li>
+			<li activieClass="active"><a @click="who='recommend'">推荐</a></li>
 			<li><a @click="who='furniture'">家具</a></li>
 			<li><a @click="who='house'">家居</a></li>
 			<li><a @click="who='activity'">活动</a></li>
 		</ul>
-
+	</div>
     
          <component :is="who"></component>
 	<footerbar></footerbar>
@@ -48,5 +49,21 @@
 		padding: 0;
 		margin: 0;
 	}
-	
+	.hd{
+		height: 40px;
+		line-height: 40px;
+		font-size:14px;
+		background: #fff;
+	}
+	.hd ul{
+		height: 40px;
+		overflow: hidden;
+	}
+	.hd ul li{
+		float: left;
+		color: #808080;
+		margin: 0 22px;
+		font-size: 14px;
+		padding: 0 10px;
+	}
 </style>

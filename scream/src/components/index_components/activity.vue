@@ -45,7 +45,7 @@
 	import axios from "axios";
 	require('vue-swipe/dist/vue-swipe.css');
 
-// in ES6 modules
+
 import { Swipe, SwipeItem } from 'vue-swipe';
 
 	export default {
@@ -88,40 +88,41 @@ import { Swipe, SwipeItem } from 'vue-swipe';
 	}
 	.all{
 		width: 100%;display: flex;flex-direction: column;
+		background:white 
 	}
 	.l{
 		float: left;
 	}
 	.my-swipe {
-	  height: 272px;
+	  height: 250px;
 	  color: #fff;
 	  font-size: 30px;
 	  text-align: center;
 	  border-bottom: 10px solid #eee;
 	}
 	.my-swipe img{
-		height:272px;
+		height:250px;
 		width: 100%
 	}
 
 	.lazy{
 		width: 100%;
-		height: 69px;
+		height: 62px;
 		border-bottom: 10px solid #eee;
 	}
 	.lazy1{
 		width: 100%;
-		height:237px;
+		height:215px;
 		border-bottom: 10px solid #eee;
 	}
 	.lazy2{
 		width: 100%;
-		height: 247px;
+		height: 224px;
 		border-bottom: 10px solid #eee;		
 	}
 	.title{
-		height: 60px;
-		line-height: 60px;
+		height: 55px;
+		line-height: 55px;
 		font-size: 18px
 	}
 	.title h1{
@@ -133,23 +134,23 @@ import { Swipe, SwipeItem } from 'vue-swipe';
 	}
 	.sale img{
 		width: 100%;
-		height: 220px
+		height: 200px
 	}
 
 	.list{
-		padding: 0 20px 20px;
-		border-bottom: 10px solid #ccc;
+		padding: 0 15px 15px;
+		border-bottom: 10px solid #eee;
 		overflow: hidden;
 	}
 	.list li{
 		padding-right: 5px;
 	}
 	.list img{
-		width: 119px;
+		width: 108px;
 	}
 	.list p {
 		font-size: 12px;
-		width: 119px;
+		width: 108px;
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
@@ -163,14 +164,14 @@ import { Swipe, SwipeItem } from 'vue-swipe';
 		display: inline-block;
 	}
 	.complax{
-		height: 975px;
+		height: 886px;
 		overflow: hidden;
 	}
 	.complax .li{
-		height:325px;
+		height:295px;
 	}
 	.complax img{
-		width: 205px;
+		width: 186px;
 	}
 	.complax p {
 		font-size: 14px;

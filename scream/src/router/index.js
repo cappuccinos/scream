@@ -10,7 +10,7 @@ import cart from "../components/cart"
 import message from "../components/message"
 import mine from "../components/mine"
 import recommend from "../components/index_components/recommend"
-
+import view from "../components/view"
 
 Vue.use(Router)
 
@@ -63,6 +63,12 @@ export default new Router({
   		
   		path:"/pages/mine",
   		component:mine
+
+      },
+      {
+      
+      path:"/search/view",
+      component:view
 
       },
       {

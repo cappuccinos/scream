@@ -15,7 +15,7 @@
 		},
 		methods:{
 			play(){
-				this.$router.push('/pages/category')
+				this.$router.push('/search/view')
 			}
 		},
 		}
