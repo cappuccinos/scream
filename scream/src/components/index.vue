@@ -3,14 +3,14 @@
 	<navbar></navbar>
 	<div class="hd">
 		<ul>
-			<li activieClass="active"><a @click="who='recommend'">推荐</a></li>
-			<li><a @click="who='furniture'">家具</a></li>
-			<li><a @click="who='house'">家居</a></li>
-			<li><a @click="who='activity'">活动</a></li>
+			<li class=""><a @click="who='recommend'">推荐</a></li>
+			<li class=""><a @click="who='furniture'">家具</a></li>
+			<li class=""><a @click="who='house'">家居</a></li>
+			<li class=""><a @click="who='activity'">活动</a></li>
 		</ul>
 	</div>
     
-         <component :is="who"></component>
+        <component :is="who"></component>
 	<footerbar></footerbar>
 			
 	</div>
@@ -66,4 +66,8 @@
 		font-size: 14px;
 		padding: 0 10px;
 	}
+	/*.active{
+		border-bottom: 2px solid #red;
+		background-color: red;
+	}*/
 </style>

@@ -169,17 +169,12 @@
 		},	
 		mounted(){
 			axios.get("/v2/page?pageId=1&tabId=10006&_=1533111546622").then(res=>{
-					console.log(res.data)
-					this.looplist = res.data.data.modules[0].moduleContent.banners;
-					this.slides = res.data.data.modules[1].moduleContent.products;
-					console.log(this.slides);
 
+					this.looplist = res.data.data.modules[0].moduleContent.banners
+					this.slides = res.data.data.modules[1].moduleContent.products
 					this.mysrc=res.data.data.modules[2].moduleContent.banners[0].bannerImgSrc
-
 					this.products = res.data.data.modules[2].moduleContent.products
-					console.log(this.products)
 					this.goodslist = res.data.data.modules[3].moduleContent.banners
-					console.log(this.goodslist)
 					this.complaxlist = res.data.data.modules[4].moduleContent.products
 					this.complaxlist1 = res.data.data.modules[5].moduleContent.products
 					this.complaxlist2 = res.data.data.modules[6].moduleContent.products
@@ -339,8 +334,8 @@
 			height:295px;
 			width: 50%;
 			float: left;
-			border-left:1px solid #ccc;
-			border-top:1px solid #ccc;
+			border-left:1px solid #eee;
+			border-top:1px solid #eee;
 			box-sizing: border-box;
 		}
 		.complax img{

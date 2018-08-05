@@ -122,7 +122,7 @@
 				this.looplist = res.data.data.modules[0].moduleContent.banners
 				
 				this.list = res.data.data.modules
-				console.log(this.list)
+				// console.log(this.list)
 
 				this.slides = res.data.data.modules[4,11,18,25,32,39].moduleContent.products 
 				
